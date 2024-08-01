@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "add_ascertainment"
+version = "0.0.1"
+description = "Add Ascertainment Characters to Nexus File"
+authors = ["Simon Greenhill <simon@simon.net.nz>"]
+homepage = "https://github.com/SimonGreenhill/add_ascertainment"
+repository = "https://github.com/SimonGreenhill/add_ascertainment"
+documentation = "https://github.com/SimonGreenhill/add_ascertainment"
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-nexus = "^2.9.0"
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+add_ascertainment = "add_ascertainment.__main__:main"

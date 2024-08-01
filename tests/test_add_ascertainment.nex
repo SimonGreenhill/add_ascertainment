@@ -1,0 +1,23 @@
+#NEXUS
+
+BEGIN DATA;
+    DIMENSIONS NTAX=4 NCHAR=9;
+    FORMAT DATATYPE=STANDARD MISSING=? GAP=-  SYMBOLS="01";
+    CHARSTATELABELS
+		1 bear_1,
+		2 bodyhairfeathers_1,
+		3 many_1,
+		4 many_2,
+		5 many_3,
+		6 many_4,
+		7 many_74,
+		8 skinbark_1,
+		9 skinbark_2
+;
+MATRIX
+ASLIAN_CheqWong    011000010
+ASLIAN_JahHut      010100001
+ASLIAN_Jahai       110110101
+ASLIAN_Kensiw      110001001
+;
+END;

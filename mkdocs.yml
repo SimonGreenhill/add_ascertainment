@@ -1,0 +1,36 @@
+site_name: add_ascertainment
+site_url: https://github.com/SimonGreenhill/add_ascertainment
+repo_url: https://github.com/SimonGreenhill/add_ascertainment
+edit_uri: "https://github.com/SimonGreenhill/add_ascertainment/edit/main/docs"
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+  palette:
+    primary: black
+    accent: light blue
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: 🔗
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/SimonGreenhill
+      name: LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/SimonGreenhill
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/SimonGreenhill
+      name: Twitter
