@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 #coding=utf-8
 import pytest
+from pathlib import Path
 from nexus import NexusReader, NexusWriter
 
-from add_ascertainment_to_nexus import get_words, get_characters, parse_word, is_sequential
-from add_ascertainment_to_nexus import add_ascertainment_words, add_ascertainment_overall
-from add_ascertainment_to_nexus import create_assumptions, add_assumptions
+from add_ascertainment.__main__ import get_words, get_characters, parse_word, is_sequential
+from add_ascertainment.__main__ import add_ascertainment_words, add_ascertainment_overall
+from add_ascertainment.__main__ import create_assumptions, add_assumptions
 
 
 # fixtures
@@ -16,7 +17,7 @@ def taxa():
 
 @pytest.fixture
 def nexus():
-    return NexusReader('test_add_ascertainment.nex')
+    return NexusReader(Path(__file__).parent / 'test_add_ascertainment.nex')
 
 
 def test_parse_word():
